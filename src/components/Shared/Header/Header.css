@@ -1,0 +1,37 @@
+/* header */
+.header{
+  background-color: white;
+}
+
+.logo{
+  height: 30px;
+  margin-left: 1.5em ;
+}
+
+.title{
+  color:#334940;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 1.5em ;
+  padding: 5px;
+}
+
+/* navbar */
+.navbar{
+  background-color: #4a6e2ea6;
+}
+
+.navbar .link{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 1.5em ;
+  padding: 5px;
+}
+.navbar .link:hover{
+  background-color: rgba(240, 255, 240, 0.788);
+  border-radius: 5px;
+  color: #0072bb;
+  transition: background-color 2s;
+}

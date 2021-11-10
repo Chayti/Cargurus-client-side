@@ -1,0 +1,26 @@
+.product{
+    border: 2px solid #4a6e2e;
+}
+.product img{
+    height: 30%;
+    width: 50%;
+}
+.product p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn{
+    background-color: #0072bb;
+    border:2px solid #4a6e2e;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+}
+.btn:hover{
+    color: #0072bb;
+    background-color: white;
+}

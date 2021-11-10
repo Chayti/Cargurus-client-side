@@ -1,0 +1,12 @@
+.login-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../images/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.front-bg-login-page{
+    background-color:rgba(255, 248, 220, 0.87);
+}

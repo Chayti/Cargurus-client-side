@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "Lamborghini Diablo",
+        "img": "https://www.lambocars.com/wp-content/uploads/2010/01/lamborghinidiablo-1.jpg",
+        "price": 20000,
+        "description": " The Lamborghini Diablo is a high-performance mid-engine sports car built by Italian automotive manufacturer Lamborghini between 1990 and 2001. It is the first production Lamborghini capable of attaining a top speed in excess of 320 kilometres per hour (200 mph). The name Diablo means 'devil' in Spanish."
+    },
+    {
+        "id": 2,
+        "name": "Ford Raptor",
+        "img": "https://www.ccarprice.com/products/Ford_F-150_Raptor_2021.jpg",
+        "price": 30000,
+        "description": " Ford Raptor is a nameplate used by Ford Motor Company on 'high-performance' pickup trucks. In use since the 2010 model year, the Raptor is the highest-performance version of the Ford F-150 and Ford Ranger. Drawing its name from both birds of prey and the velociraptor, the model line is intended as a street-legal counterpart of an off-road racing trophy truck. The F-150 Raptor is currently in its third generation; the Ranger Raptor was introduced in 2019 (in markets outside of North America). "
+    },
+    {
+        "id": 3,
+        "name": "Ferrari Testarossa",
+        "img": "https://www.auto-data.net/images/f41/Ferrari-Testarossa.jpg",
+        "price": 25000,
+        "description": " The Ferrari Testarossa (Type F110) is a 12-cylinder mid-engine sports car manufactured by Ferrari, which went into production in 1984 as the successor to the Ferrari Berlinetta Boxer. The Pininfarina-designed car was originally produced from 1984 to 1991, with two model revisions following the end of Testarossa production called the 512 TR and F512 M, which were produced from 1992 to 1996. Including revised variations, almost 10,000 cars in total were produced, making it one of the most mass-produced Ferrari models"
+    },
+    {
+        "id": 4,
+        "name": "Porsche 911 Carrera",
+        "img": "https://www.ccarprice.com/products/Porsche-911-Carrera-4s-2021.jpg",
+        "price": 22000,
+        "description": " The Porsche 911 (pronounced Nine Eleven or in German: Neunelfer) is a two-door 2+2 high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and originally a torsion bar suspension. The car has been continuously enhanced through the years but the basic concept has remained unchanged. The engines were air-cooled until the introduction of the 996 series in 1998."
+    },
+    {
+        "id": 5,
+        "name": "Toyota Corolla",
+        "img": "https://images.hgmsites.net/med/2022-toyota-corolla-xle-cvt-natl-angular-front-exterior-view_100805096_m.jpg",
+        "price": 35000,
+        "description": "The Toyota Corolla (Japanese: トヨタ・カローラ, Hepburn: Toyota Karōra) is a series of subcompact and compact cars manufactured and marketed globally by Toyota. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then. In 1997, the Corolla became the best selling nameplate in the world, surpassing the Volkswagen Beetle. Toyota reached the milestone of 50 million Corollas sold over twelve generations in 2021.The series has undergone several major redesigns. "
+    },
+    {
+        "id": 6,
+        "name": "Toyota Noah",
+        "img": "https://catalogphoto.goo-net.com/carphoto/10102048_201004s.jpg",
+        "price": 31900,
+        "description": " The Toyota Noah (Japanese: トヨタ・ノア, Hepburn: Toyota Noa) is a seven or eight-seat minivan with two rear sliding doors built by Toyota and sold mainly in Asian countries. It is positioned below the Estima and Alphard, and above the Sienta. It replaces the LiteAce/TownAce Noah, retaining the 'R' model code and generation numbering. The Noah has two twin versions. Initially, at launch, it only had one version, named the Toyota Voxy (Japanese: トヨタ・ヴォクシー, Hepburn: Toyota Vokushī)."
+    },
+    {
+        "id": 7,
+        "name": "Mitsubishi Pajero",
+        "img": "https://quickbutik.imgix.net/13175t/products/5de618b426c42.jpeg",
+        "price": 33910,
+        "description": "The Mitsubishi Pajero (三菱・パジェロ, Japanese: [pad͡ʑeɾo]; English: /pəˈhɛroʊ/; Spanish: [paˈxeɾo])[5][6] is a full-size SUV (sport utility vehicle) that was manufactured and marketed globally by Mitsubishi over four generations — introduced in 1981 and discontinued in 2021. Mitsubishi marketed the SUV as the Montero in Spain and the Americas (except for Brazil and Jamaica)[7] and as the Shogun in the United Kingdom, but it is no longer marketed in North America as of late 2006.[8] The Pajero nameplate derives from Leopardus pajeros, the Pampas cat."
+    },
+    {
+        "id": 8,
+        "name": "Toyota Premio",
+        "img": "https://www.bdstall.com/asset/product-image/giant_121260.jpg",
+        "price": 29700,
+        "description": " The Toyota Premio (Japanese: トヨタ・プレミオ, Toyota Puremio) and its twin the Toyota Allion (Japanese: トヨタ・アリオン, Toyota Arion) are sedans sold in Japan from 2001 to 2021 by Toyota. The sedans are designated as a compact car by Japanese dimension regulations and the exterior dimensions do not change with periodic updates. The Premio is the successor of the Corona which first appeared in 1957. The Corona EXiV, a four-door hardtop sedan that appeared in 1989, was replaced by the Progrès, which was also briefly available with the Premio until 2007. The Allion is exclusive to Japanese Toyota dealerships Toyota Store as a smaller companion to the Crown, while the Premio is exclusive to Toyopet Store locations, as a smaller companion to the Mark X. "
+    },
+    {
+        "id": 9,
+        "name": "Honda Grace",
+        "img": "https://catalogphoto.goo-net.com/carphoto/10201042_201509b.jpg",
+        "price": 23420,
+        "description": "Honda Grace is a competitor of Toyota Allion, Toyota Premio, Nissan Sylphy etc. DHS motors does not officially import this car as brand new but still other importers selling recondition car in Bangladesh. Grece features a powerful 1,496 cc engine and provides great fuel efficiency which makes this perfect as a daily car."
+    },
+    {
+        "id": 10,
+        "name": "Nissan X-trail",
+        "img": "https://ic1.maxabout.us/autos/cars_india/nissan-22-new-x-trail-164-new-x-trailslx-mt.jpg",
+        "price": 26710,
+        "description": "The Nissan X-trail is a compact crossover SUV produced by the Japanese automaker Nissan. It offers a powerful advanced 1995cc diesel engine that provides 142bhp@4000rpm maximum power and 200Nm@2000rpm maximum torque. The X-Trail exterior offers the signature Nissan V-Motion grille, rear styling plate and chrome door sills. The interior offers a leather finishing, a gorgeous dashboard and plenty of space. This SUV can take on any type of road and provide you a pretty smooth comfy ride. As Pacific Motors Limited is the authorized dealer all the spare parts and after-sale service will be available."
+    }
+]
