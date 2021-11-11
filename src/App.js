@@ -8,6 +8,8 @@ import Register from "./components/Login/Register/Register";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
+import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
+import MyOrders from "./components/Dashboard/MyOrders/MyOrders";
 
 function App() {
   return (
@@ -27,12 +29,9 @@ function App() {
             <PrivateRoute path="/product/:productId">
               <ProductDetail></ProductDetail>
             </PrivateRoute>
-            {/* <PrivateRoute exact path="/mybookings">
-            <MyBookings></MyBookings>
-          </PrivateRoute>
-          <PrivateRoute exact path="/admin">
-            <Admin></Admin>
-          </PrivateRoute> */}
+            <PrivateRoute path="/dashboard">
+              <Dashboard></Dashboard>
+            </PrivateRoute>
             <Route exact path="/login">
               <Login></Login>
             </Route>

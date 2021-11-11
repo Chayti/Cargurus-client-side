@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import './ProductDetail.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers, faNotesMedical, faHandHoldingUsd, faCalendarWeek } from '@fortawesome/free-solid-svg-icons';
-import { Card, CardGroup } from "react-bootstrap";
 import useAuth from "../../hooks/useAuth";
 import { useForm } from "react-hook-form";
 import Header from "../Shared/Header/Header";
@@ -12,28 +9,27 @@ import Footer from "../Shared/Footer/Footer";
 const ProductDetail = () => {
 
     const { user } = useAuth();
-    const { serviceId } = useParams();
-    const [service, setService] = useState([]);
+    const { productId } = useParams();
+    const [product, setProduct] = useState([]);
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`https://spooky-skull-68797.herokuapp.com/services/${serviceId}`)
+        fetch(`http://localhost:5000/products/${productId}`)
             .then(res => res.json())
             .then(data => {
-                console.log(`https://spooky-skull-68797.herokuapp.com/services/${serviceId}`)
-                setService(data)
+                console.log(`http://localhost:5000/products/${productId}`)
+                setProduct(data)
             }
             );
-    }, [serviceId])
-    console.log(serviceId)
+    }, [productId])
 
     const onSubmit = data => {
-        data.serviceId = serviceId
-        data.name = service.name
-        data.img = service.img
-        data.description = service.description
+        data.productId = productId
+        data.name = product.name
+        data.img = product.img
+        data.description = product.description
         data.status = 'pending'
-        fetch('https://spooky-skull-68797.herokuapp.com/booking', {
+        fetch('http://localhost:5000/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -43,7 +39,7 @@ const ProductDetail = () => {
             .then(res => res.json())
             .then(result => {
                 if (result.insertedId) {
-                    alert('Your booking processed Successfully');
+                    alert('Your order processed Successfully');
                     reset();
                 }
             })
@@ -52,22 +48,13 @@ const ProductDetail = () => {
     return (
         <div>
             <Header></Header>
-            <div className="service-banner d-flex align-items-center justify-content-center ">
-                <div className="front-bg mb-5">
-
-                    <h1>Welcome to {service.name}</h1>
-
-                    <h2>Join us!! Be happy with us!!! Enjoy the whole world!!!</h2>
-                    <br /><br />
-                    <button className="btn py-3 px-5 fs-4">Book for {service.name}</button>
-                </div>
-            </div>
-            <div className="container my-5 service-detail">
-                <h1>What is the {service.name}?</h1>
-                <img className="my-3" src={service.img} alt="..." />
-                <h4>{service.description}</h4>
+            <div className="container my-5 product-detail">
+                <h1>{product.name}</h1>
+                <img className="my-3" src={product.img} alt="..." />
                 <br />
-                <h2 className="text-start fw-bold bg-info text-success d-inline">Price: $60</h2>
+                <h2 className="text-start fw-bold bg-warning text-primary d-inline">Price: ${product.price}</h2>
+                <h4>{product.description}</h4>
+                <br />
                 <br />
                 <div>
                     <div className="shipping-form-bg d-flex justify-content-center">

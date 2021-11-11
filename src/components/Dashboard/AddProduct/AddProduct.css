@@ -1,0 +1,9 @@
+.admin-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../images/admin-banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
