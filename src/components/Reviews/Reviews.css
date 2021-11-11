@@ -1,0 +1,21 @@
+.carousel-width{
+    width: 25vw;
+}
+
+.reviews h2{
+    font-size: 50px;
+    color: #0072bb;
+    text-shadow:  0px 0px 5px #000;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+
+.reviews h5{
+    text-align: justify;
+}
+
+@media only screen and (max-width:1024px){
+    .carousel-width{
+        width: 75vw;
+    }
+}

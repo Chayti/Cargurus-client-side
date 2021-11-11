@@ -6,6 +6,7 @@ import Footer from '../Shared/Footer/Footer';
 import Product from '../Product/Product';
 import { Row } from 'react-bootstrap';
 import useProducts from '../../hooks/useProducts';
+import Reviews from '../Reviews/Reviews';
 
 const Home = () => {
     const [products] = useProducts();
@@ -45,6 +46,8 @@ const Home = () => {
                     </Row>
                 </div>
             </div>
+
+            <Reviews></Reviews>
 
             <Footer></Footer>
 
