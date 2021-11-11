@@ -9,7 +9,6 @@ import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
-import MyOrders from "./components/Dashboard/MyOrders/MyOrders";
 
 function App() {
   return (

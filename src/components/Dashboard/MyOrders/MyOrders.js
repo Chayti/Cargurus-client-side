@@ -15,7 +15,7 @@ const MyOrders = () => {
     }, [user.email, products]);
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/myOrders/${id}`
+        const url = `http://localhost:5000/orders/${id}`
         const ans = window.confirm('Do you want to delete it?')
         if (ans) {
             axios
