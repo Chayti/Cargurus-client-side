@@ -14,10 +14,10 @@ const ProductDetail = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://sheltered-peak-41800.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => {
-                console.log(`http://localhost:5000/products/${productId}`)
+                console.log(`https://sheltered-peak-41800.herokuapp.com/products/${productId}`)
                 setProduct(data)
             }
             );
@@ -29,7 +29,7 @@ const ProductDetail = () => {
         data.img = product.img
         data.description = product.description
         data.status = 'pending'
-        fetch('http://localhost:5000/order', {
+        fetch('https://sheltered-peak-41800.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

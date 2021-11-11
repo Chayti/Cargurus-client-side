@@ -6,7 +6,7 @@ const ManageOrder = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://sheltered-peak-41800.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products])
@@ -14,7 +14,7 @@ const ManageOrder = () => {
     const handleApprove = data => {
         data.status = "shipped";
         if (data.email) {
-            fetch(`http://localhost:5000/orders/${data._id}`, {
+            fetch(`https://sheltered-peak-41800.herokuapp.com/orders/${data._id}`, {
                 method: "PUT",
                 headers: {
                     'content-type': "application/json"
@@ -27,7 +27,7 @@ const ManageOrder = () => {
     }
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/orders/${id}`
+        const url = `https://sheltered-peak-41800.herokuapp.com/orders/${id}`
         const ans = window.confirm('Do you want to delete it?')
         if (ans) {
             axios

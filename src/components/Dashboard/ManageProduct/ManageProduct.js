@@ -6,13 +6,13 @@ const ManageProduct = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://sheltered-peak-41800.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products])
 
     const handleDelete = (id) => {
-        const url = `http://localhost:5000/products/${id}`
+        const url = `https://sheltered-peak-41800.herokuapp.com/products/${id}`
         const ans = window.confirm('Do you want to delete it?')
         if (ans) {
             axios
