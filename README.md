@@ -4,6 +4,7 @@ CarGurus - Automotive Marketplace --- We the team of CarGurus has created this w
 
 [Live Site](https://cargurus-ef9c6.web.app/)
 [Server](https://sheltered-peak-41800.herokuapp.com/)
+Admin Email : admin@admin.com & Password : 123456
 
 5 bullet points of my site are:
 * My website is about to provide the clients with brand new cars they cherish with a reasonable price. We have important feedbacks also from our clients on home page.
