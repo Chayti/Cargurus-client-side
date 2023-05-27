@@ -14,10 +14,10 @@ const ProductDetail = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`https://sheltered-peak-41800.herokuapp.com/products/${productId}`)
+        fetch(`https://cargurus-server-side.vercel.app/products/${productId}`)
             .then(res => res.json())
             .then(data => {
-                console.log(`https://sheltered-peak-41800.herokuapp.com/products/${productId}`)
+                console.log(`https://cargurus-server-side.vercel.app/products/${productId}`)
                 setProduct(data)
             }
             );
@@ -29,7 +29,7 @@ const ProductDetail = () => {
         data.img = product.img
         data.description = product.description
         data.status = 'pending'
-        fetch('https://sheltered-peak-41800.herokuapp.com/order', {
+        fetch('https://cargurus-server-side.vercel.app/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

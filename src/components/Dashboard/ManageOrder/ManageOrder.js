@@ -6,7 +6,7 @@ const ManageOrder = () => {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('https://sheltered-peak-41800.herokuapp.com/orders')
+        fetch('https://cargurus-server-side.vercel.app/orders')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products])
@@ -14,7 +14,7 @@ const ManageOrder = () => {
     const handleApprove = data => {
         data.status = "shipped";
         if (data.email) {
-            fetch(`https://sheltered-peak-41800.herokuapp.com/orders/${data._id}`, {
+            fetch(`https://cargurus-server-side.vercel.app/orders/${data._id}`, {
                 method: "PUT",
                 headers: {
                     'content-type': "application/json"
@@ -27,7 +27,7 @@ const ManageOrder = () => {
     }
 
     const handleDelete = (id) => {
-        const url = `https://sheltered-peak-41800.herokuapp.com/orders/${id}`
+        const url = `https://cargurus-server-side.vercel.app/orders/${id}`
         const ans = window.confirm('Do you want to delete it?')
         if (ans) {
             axios

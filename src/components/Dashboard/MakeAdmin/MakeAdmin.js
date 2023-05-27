@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmit = e => {
         const user = { email };
-        fetch('https://sheltered-peak-41800.herokuapp.com/users/admin', {
+        fetch('https://cargurus-server-side.vercel.app/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

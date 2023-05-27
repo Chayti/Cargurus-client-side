@@ -7,7 +7,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([])
 
     useEffect(() => {
-        fetch('https://sheltered-peak-41800.herokuapp.com/review')
+        fetch('https://cargurus-server-side.vercel.app/review')
             .then(res => res.json())
             .then(data => setReviews(data));
     }, [reviews])

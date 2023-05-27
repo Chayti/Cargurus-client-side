@@ -9,13 +9,13 @@ const MyOrders = () => {
     const { user } = useAuth();
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`https://sheltered-peak-41800.herokuapp.com/myOrders/${user?.email}`)
+        fetch(`https://cargurus-server-side.vercel.app/myOrders/${user?.email}`)
             .then((res) => res.json())
             .then((data) => setProducts(data));
     }, [user.email, products]);
 
     const handleDelete = (id) => {
-        const url = `https://sheltered-peak-41800.herokuapp.com/orders/${id}`
+        const url = `https://cargurus-server-side.vercel.app/orders/${id}`
         const ans = window.confirm('Do you want to delete it?')
         if (ans) {
             axios
